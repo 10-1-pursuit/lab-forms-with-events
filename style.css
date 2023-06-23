@@ -1,0 +1,8 @@
+li.completed {
+    text-decoration: line-through;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
