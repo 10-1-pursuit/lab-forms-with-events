@@ -1,37 +1,28 @@
-const lists = document.querySelector("ul")
-const paragraph = document.querySelector("p")
+const lists = document.querySelector("ul");
+const paragraph = document.querySelector("p");
 
-const forms = document.querySelector("form")
+const forms = document.querySelector("form");
 
+forms.addEventListener("submit", (event) => {
+  event.preventDefault();
 
+  const item = document.createElement("li");
 
-forms.addEventListener("submit", (event)=>{
+  item.innerText = event.target["list-item"].value;
 
-event.preventDefault()
+  if (event.target["list-item"].value === "") {
+    paragraph.innerText = "Error. Todo cannot be empty";
+  } else {
+    lists.append(item);
+  }
 
-const item = document.createElement("li")
+  event.target.reset();
 
-item.innerText = event.target["list-item"].value
+  let items = document.querySelectorAll("li");
 
-if(event.target["list-item"].value === ""){
-    paragraph.innerText = 'Error. Todo cannot be empty';
-    
-}else{
-    lists.append(item)
-}
-
-event.target.reset()
+  for (let singleItem of items) {
+    singleItem.addEventListener("click", (event) => {
+      event.target.style.textDecoration = "line-through";
+    });
+  }
 });
-
-
-
-
-let items = document.querySelectorAll("li")
-
-for(let singleItem of items){
-
-singleItem.addEventListener("click",(event)=>{
-event.target.style["text-decoration"] = "line-through;"
-})
-
-}
