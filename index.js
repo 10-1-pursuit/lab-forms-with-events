@@ -16,11 +16,28 @@ function addTodoItem(text) {
 
     // Add event listener to mark the item as completed when clicked
     todoItem.addEventListener('click', function () {
-        todoItem.classList.toggle('completed');
+        //✨✨ BONUS: clicking a completed todo item uncrosses it
+        if (todoItem.classList.contains('completed')) {
+            todoItem.classList.remove('completed');
+        } else {
+            todoItem.classList.add('completed');
+        }
     });
+
+    // ✨✨BONUS: Create a delete button for each to-do item
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', function () {
+        todoItem.remove();
+    });
+    todoItem.appendChild(deleteButton);
 
     // Append the li element to the todo list
     todoList.appendChild(todoItem);
+
+    // ✨✨BONUS: Clear the input field
+    input.value = '';
 }
 
 // Event listener for the form submission
@@ -30,7 +47,16 @@ form.addEventListener('submit', function (event) {
     const todoText = input.value.trim(); // Get the value of the input and remove leading/trailing whitespace
 
     if (todoText !== '') {
-        addTodoItem(todoText); // Add the todo item
+
+        // ✨✨ BONUS: Added multiple To-Dos from text input with multiple lines:
+        const todoItems = todoText.split('\n'); // Split the input text by newline character to get individual to-do items
+
+        todoItems.forEach(function (item) {
+            if (item.trim() !== '') {
+                addTodoItem(item); // Add each non-empty to-do item
+            }
+        });
+
         input.value = ''; // Clear the input field
         errorMessage.textContent = ''; // Clear the error message
     } else {
