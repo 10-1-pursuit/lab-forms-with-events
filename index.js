@@ -11,7 +11,7 @@ forms.addEventListener("submit", (event) => {
   item.innerText = event.target["list-item"].value;
 
   if (event.target["list-item"].value === "") {
-    paragraph.innerText = "Error. Todo cannot be empty";
+    paragraph.innerText = "Error: Todo cannot be empty!";
   } else {
     lists.append(item);
   }
