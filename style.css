@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+}
+
+
+h1 {
+    margin: 44px;
+}
+
+ul {
+    display:none;
+    padding: 8px;
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.list {
+    text-align: center;
+    font-size: small;
+}
+
+form {
+
+}
