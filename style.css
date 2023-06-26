@@ -8,11 +8,21 @@ h1 {
 }
 
 .header {
-    font-size: medium;
+    font-size:x-large;
+    color:rgba(214, 178, 79, 0.787);
     text-align: center;
+    border-radius: 27px;
+    border-width: 10px;;
+    border-left: 42px;
+    border-right: 42px;
     border-style: double outset;
     border-color: rgb(106, 58, 58);
 
+}
+
+fieldset {
+    border-radius: 9px;
+    margin: 40px 20px;
 }
 
 ul {
@@ -23,16 +33,27 @@ ul {
 }
 
 .list {
+    
     font-family: sans-serif;
     border-radius: 8.8px;
     font-size: 10px;
     text-align: center;
-    margin: 200px 320px;
-    height: 500px;
-    width:500px;
-    background-color: rgba(113, 9, 37, 0.358);
+    margin: 110px 410px;
+    height: 440px;
+    width:480px;
+    background-color: rgba(178, 40, 77, 0.479);
 }
 
 #submit {
     align-items: center;
+}
+
+#error-message {
+    font-size: 200%;
+    font-weight: bold;
+    text-align-last: center;
+}
+
+.completed {
+    text-decoration: line-through;
 }
