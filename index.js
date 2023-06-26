@@ -8,6 +8,7 @@ const unorderedList = document.querySelector("ul")
 const toDoListDiv = document.querySelector("div")
 
 const newItemForList = document.querySelector("p")
+const imageUploaded = document.querySelector("image")
 
 
 
@@ -19,29 +20,32 @@ const newItemForList = document.querySelector("p")
 newForm.addEventListener("submit", (event) => {
     event.preventDefault()
 
-    const liEvent = document.createElement("li")
-    liEvent.classList.add("newList")
-    liEvent.innerText = event.target["toDoList"].value
+    const myLi = document.createElement("li")
+    myLi.classList.add("newList")
+    myLi.innerText = event.target["ToDo"].value
+    myLi.append(newItemForList)
 
-    liEvent.addEventListener("click", (event) => {
-        liEvent.style.texDecorationLine = "line-through";
+
+    myLi.addEventListener("click", (event) => {
+        myLi.style.textDecorationLine = "line-through"
+
+    })
+    myLi.addEventListener("dblclick", (event) => {
+
+        myLi.innerText = ""
 
     })
 
-    liEvent.addEventListener("mouseover", (event) => {
-        liEvent.style.color = "black";
-
-    })
-
-    unorderedList.append(liEvent)
+    unorderedList.append(myLi)
     setTimeout(newForm.reset(), 3000)
 
 })
 
-
 const listItems = document.getElementsByClassName("newList")
 
 console.log(listItems)
+
+
 
 
 
