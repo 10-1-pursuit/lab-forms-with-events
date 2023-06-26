@@ -1,8 +1,17 @@
 <html>
     <head>
-      <script src="index.js"></script>
+      <script src="index.js" defer></script>
+      <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-      <h1> CODE YOUR SOLUTION </h1>      
+      <h1><strong>My To-Dos</strong></h1>  
+      <p></p>
+      <form> 
+        <label class = "todo">
+        <input type="text" placeholder="write here" id="list"/>
+        <input type="submit"/>
+      </label>
+      </form>    
+      <ul id="todo_list"></ul>
     </body>
 </html>
