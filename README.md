@@ -16,16 +16,16 @@ Build one of the most common applications on the web, a simple todo application,
 
 The app will have the following items:
 
-- An `h1` title (e.g. "My To-Dos").
-- A single `ul` tag, empty when the page is first loaded.
-- A `form` for the user to add a new to-do, with a single text `input` and a `submit` button.
+x An `h1` title (e.g. "My To-Dos").
+x A single `ul` tag, empty when the page is first loaded.
+x A `form` for the user to add a new to-do, with a single text `input` and a `submit` button.
 
 And the following functionalities:
 
-- When the user writes something in the `form`'s text input area and clicks `submit`, the `ul` should update with a new `li` item at the bottom of the list. The page **should not refresh**.
+x When the user writes something in the `form`'s text input area and clicks `submit`, the `ul` should update with a new `li` item at the bottom of the list. The page **should not refresh**.
 
   <details>
-    <summary>
+    <summary
       Hints/Steps
     </summary>
 
@@ -49,7 +49,7 @@ And the following functionalities:
 
   </details>
 
-- When the user clicks on one of the `li` items, the item should be crossed out, indicating that that to-do is complete. You will need to look at [`[element].style.textDecoration`](https://www.w3schools.com/jsref/prop_style_textdecoration.asp) for the cross out effect. Look at all the different text decoration options.
+x When the user clicks on one of the `li` items, the item should be crossed out, indicating that that to-do is complete. You will need to look at [`[element].style.textDecoration`](https://www.w3schools.com/jsref/prop_style_textdecoration.asp) for the cross out effect. Look at all the different text decoration options.
 
   <details>
     <summary>
@@ -67,8 +67,8 @@ And the following functionalities:
 
 ## Bonus Tasks
 
-- Have the input go back to empty after adding a new todo.
-- Implement a delete `button` next to each `li` that removes that `li` tag entirely.
-- Clicking a todo that is crossed out (completed) uncrosses the todo.
+x Have the input go back to empty after adding a new todo.
+x Implement a delete `button` next to each `li` that removes that `li` tag entirely.
+x Clicking a todo that is crossed out (completed) uncrosses the todo.
 - Add the ability to add multiple to-dos if the user submits a text input with multiple lines. Each line should be a new to-do.
 - Add some CSS styling to your app.
