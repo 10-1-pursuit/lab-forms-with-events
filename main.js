@@ -89,7 +89,7 @@ button.style.display = "none";
 
 body.appendChild(button);
 
-const completedBtn = document.getElementById("completion-btn");
+//const completedBtn = document.getElementById("completion-btn");
 
 // completedBtn.addEventListener("click", (event) => {
 function updateCompletionStatus() {
