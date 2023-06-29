@@ -1,0 +1,9 @@
+*{margin: 0;}
+
+form{text-align: center;margin: 50px;}
+
+h1{text-align: center; }
+
+#list{text-align: center;padding:100px}
+
+div#list{border:orange; border-width:5px; border-style:solid;}
