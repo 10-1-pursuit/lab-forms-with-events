@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+    *, body {
+        background-color: rgb(47, 47, 47);
+        color: rgb(255, 225, 90);
+    }
+
+    #inputField {
+        background-color: rgb(97, 61, 132);
+    }
+}
