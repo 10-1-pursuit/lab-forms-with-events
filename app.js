@@ -1,6 +1,5 @@
 // Get the list element and the error message element.
 const lists = document.querySelector("ul");
-const errorCall = document.querySelector("h2");
 
 // Get the form element.
 const forms = document.querySelector("form");
@@ -16,10 +15,8 @@ forms.addEventListener("submit", (event) => {
     // Set the text content of the list item to the value of the input field.
     item.textContent = event.target["inputField"].value;
 
-    // Check if the value of the input field is empty. If it is, set the error message to empty. Otherwise, add the list item to the list.
-    (event.target["inputField"].value === "") ?
-        errorCall.textContent = "" :
-        lists.append(item);
+    // Add item to list
+    lists.append(item);
 
     // Reset the form.
     event.target.reset();
