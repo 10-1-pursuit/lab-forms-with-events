@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(lightblue, rgb(173, 248, 173), yellow);
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: lightblue;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+#submit {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: darkorange;
+    color: blanchedalmond;
+    font-size: 16px;
+    cursor: pointer
+}
